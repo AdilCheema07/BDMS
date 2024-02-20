@@ -1,0 +1,297 @@
+#btn-logout {
+    /* text-align: left; */
+    text-decoration: none;
+    padding: .5rem;
+    justify-content: center;
+    cursor: pointer;
+    margin: .5rem;
+    background-color: rgb(69, 130, 243);
+    border: none;
+    /* border-radius: .3rem; */
+    color: white;
+    font-size: 1rem;
+}
+
+#btn-logout a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn-logout:hover {
+    background-color: rgb(248, 67, 67);
+    padding: .5rem 1rem;
+    transition: all 500ms ease-out 0s;
+}
+
+/* Constants  */
+.pcolor {
+    color: rgb(68, 129, 243);
+}
+
+.scolor {
+    color: rgb(248, 68, 68);
+}
+
+.tcolor {
+    color: #ffca28;
+}
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: rgb(171, 167, 167);
+}
+
+
+
+/* General Settings  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+.red {
+    color: red;
+}
+
+div>ul>li {
+    list-style: none;
+    font-weight: 600;
+}
+
+.color-black {
+    color: black;
+}
+
+.nav1 {
+    color: #FFFFFF;
+    text-align: right;
+    background-color: #4575bd;
+    /* display: inline; */
+}
+
+.nav-right {
+    /* text-align: right; */
+    margin: 0 2rem 0 0;
+    /* padding: .5rem; */
+}
+
+.vertical-line {
+    border-left: 2px solid white;
+    margin: 1rem;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+#navbar {
+    background-color: rgb(53, 52, 52);
+    min-height: 92.8vh;
+}
+
+
+.nav {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    list-style: none;
+    text-decoration: none;
+    padding: 1.7rem;
+    color: #4575bd;
+    font-size: x-large;
+    /* background: rgb(53, 52, 52); */
+}
+
+.nav-item:hover {
+    color: #ffca28;
+    background-color: red;
+    transition: all 800ms ease-out 0s;
+}
+
+.dashboard-right h1 {
+    /* margin: auto; */
+    color: red;
+    font-size: 3rem;
+    text-shadow: 2px 1.5px 1px rgb(5, 2, 2);
+}
+
+.dashboard-right {
+    margin: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 2rem;
+}
+
+.table>th,
+td {
+    border: 1px solid black;
+    padding: 1rem 2.5rem;
+    /* text-align: left; */
+}
+
+.btn_approve {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_approve:hover {
+    background-color: #45a049;
+}
+
+.btn_decline {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_decline:hover {
+    background-color: #d32f2f;
+}
+
+.table-users {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 2rem;
+}
+
+.delete-button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.update-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.update-button:hover {
+    background-color: #086acc;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-sub {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-add:hover,
+.btn-sub:hover {
+    opacity: .8;
+}
+
+/* Apply CSS styles to create a grid layout */
+.blood_quantities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;/
+}
+
+/* Style for each blood type container */
+.blood-type {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: .2rem .2rem .2rem rgb(66, 66, 66);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for each blood type */
+.blood-type:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: .4rem .4rem .4rem rgb(66, 66, 66);
+}
+
+/* Blood type name styles */
+.blood-type h4 {
+    font-size: 2rem;
+    margin: 0;
+    color: red;
+}
+
+/* Blood quantity styles */
+.blood-type p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .blood_quantities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

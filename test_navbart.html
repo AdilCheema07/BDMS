@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Dashboard</title>
+    <Style>
+        * Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: rgb(69, 130, 243);
+    font-size: large;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items:hover{
+    color: #ffca28;
+    cursor: pointer;
+    transition: color 500ms ease-in-out 0s;
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1000px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px;
+    }
+}
+
+
+    </Style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <span class="logo">Blood Donation Management System</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="nav-items" href="Home_login.php">Home</a></li>
+                <li><a class="nav-items" href="About_us.php">About Us</a></li>
+                <li><a class="nav-items" href="Contact_us.php">Contact Us</a></li>
+                <li><a class="nav-items" href="Admin_login.php">Admin</a></li>
+                <li><a class="nav-items" href="Donor_login.php">Donor</a></li>
+                <li><a class="nav-items" href="Seeker_login.php">Seeker</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <script>const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });</script>
+</body>
+</html>

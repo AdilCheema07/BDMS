@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.red{
+    color: red;
+}
+div > ul > li {
+    list-style: none;
+    font-weight: 600;
+}
+
+.color-black{
+    color: black;
+}
+
+.footer{
+    background-color: rgb(247, 64, 64);
+    padding: .1rem 0;
+    justify-content: center;
+    
+}
+
+
+/* Desktop View  */  
+
+/* Form Body  */
+
+    #container{
+    background-color: white;
+    border: 2px solid;
+    border-radius: .3rem;
+    width: 80%;
+    padding: 3rem 1rem;
+    margin: 4rem auto;
+    box-shadow: .4rem .4rem .4rem rgb(66, 66, 66);
+}
+
+.signup-box{
+    margin: auto 5rem;  
+}
+
+.form-box{
+    margin: 1.5rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    padding: .3rem 1.5rem;
+    margin: .7rem 3rem .7rem 0;
+}
+
+.form-box2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#Gender{
+    width: 85%;
+}
+
+#blood_group{
+    width: 85%;
+}
+
+.btn-login{
+    text-align: left;
+    padding: .4rem 2rem;
+    cursor: pointer;
+    margin: .3rem auto;
+    background-color: rgb(69, 130, 243);
+    border: none;
+    /* border-radius: .3rem; */
+    color: white;
+    
+}
+
+.btn-login:hover{
+    background-color: rgb(248, 67, 67);
+    padding: .4rem 2.5rem;
+    transition: all 500ms ease-out 0s;
+}
+
+#signup{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#signup:hover{
+    color: rgb(248, 67, 67);
+}
+
+
+/* Tablet View  */
+
+@media only screen and (max-width: 990px){
+
+    .form-box{
+        flex-direction: column;
+    }
+
+}
+    
+
+/* Mobile View  */
+    @media only screen and (max-width: 730px){
+        .signup-box{
+            margin: auto 1rem;
+        }
+        *{
+            font-size: 95%;
+        }
+       
+    }
+    @media only screen and (max-width: 400px){
+        *{
+            font-size: 92%;
+        }
+    }
